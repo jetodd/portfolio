@@ -1,0 +1,193 @@
+﻿
+/* Apply these styles to everything
+	* --------------------------------------- */
+* {
+    font: 14px tahoma, times, sans-serif;
+}
+
+body {
+    background-color: #a2e8e8;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+/* Style for the fish
+	* --------------------------------------- */
+#wrap {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 30%;
+    /*height: 35vw;*/
+}
+
+@media only screen and (max-device-width: 800px) {
+    #wrap {
+        width: 50%;
+    }
+}
+
+.fish {
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+    float: left;
+    z-index: 9;
+    width: 81.8%;
+}
+
+.bubble {
+    bottom: -3px;
+    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 7;
+    width: 18.2%;
+}
+
+.fish img, .bubble img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+h1 {
+	font-size: 3em;
+	font-family: georgia, serif;
+	color: #5cbca9;
+    letter-spacing: 2px;
+	font-weight: normal;
+	font-style: italic;
+    margin:0;
+    padding:0;
+}
+
+/* Bubbles
+* --------------------------------------- */
+.circle {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-image: url("http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg");
+    background-position: center;
+    float:left;
+    z-index:20;
+    position: absolute;
+    bottom: 350px;
+    left: 450px;
+    animation: scale 8s 1 ease;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes scale {
+    0% { transform: scale(1) translate(0px,0px); }
+    100% { transform: scale(15) translate(30px, -30px); }
+}
+
+@-moz-keyframes scale {
+    0% { transform: scale(1); }
+    100% { transform: scale(15) translate(30px, -30px); }
+}
+
+@-o-keyframes scale {
+    0% { transform: scale(1); }
+    100% { transform: scale(15) translate(30px, -30px); }
+}
+
+@keyframes scale {
+    0% { transform: scale(1); }
+    100% { transform: scale(15) translate(30px, -30px); }
+}
+
+@media only screen and (max-device-width: 800px) {
+    @-webkit-keyframes scale {
+        0% { transform: scale(1) translate(0px,0px); }
+        100% { transform: scale(15) translate(10px, -40px); }
+    }
+
+    @-moz-keyframes scale {
+        0% { transform: scale(1); }
+        100% { transform: scale(15) translate(10px, -40px); }
+    }
+
+    @-o-keyframes scale {
+        0% { transform: scale(1); }
+        100% { transform: scale(15) translate(10px, -40px); }
+    }
+
+    @keyframes scale {
+        0% { transform: scale(1); }
+        100% { transform: scale(15) translate(10px, -40px); }
+    }
+}
+
+.circle-multiline {
+    height: 10px;
+    width: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #d2e4ef;
+    opacity: 0.8;
+    float:left;
+    z-index:20;
+    position: absolute;
+    bottom: 310px;
+    left: 470px;
+}
+
+.circle-text {
+    color: white;
+    font-size: 150%;
+    width : 70%;
+	height : 70%;
+	max-width : 70%;
+	max-height : 70%;
+	margin : 0;
+	padding : 0;
+	position : relative;
+	left : 15%;
+	top : 15%;
+}
+
+@keyframes move {
+  50% {
+     transform: translate(160px, -20px);
+  }
+}
+
+/* Navigation
+* --------------------------------------- */
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+
+ul#navigation li a {
+    padding-left: 10px;
+    display: block;
+    margin-left: -2px;
+    width: 150px;
+    height: 60px;
+    background-color:#FED4A6;
+    border:1px solid #F8ABAF;
+    color: #ed747a;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 60px;
+}
+
+ul#navigation li a:hover {
+    color: #fff;
+    border:1px solid #55e0e0;
+}
