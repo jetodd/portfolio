@@ -5,189 +5,108 @@
     font: 14px tahoma, times, sans-serif;
 }
 
-body {
-    background-color: #a2e8e8;
-}
-
-#container {
+html, body {
     height: 100%;
-    width: 100%;
+    overflow: hidden;
 }
 
-/* Style for the fish
-	* --------------------------------------- */
-#wrap {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 30%;
-    /*height: 35vw;*/
+body {
+    width: 400%;
+    background: #fff; /* For browsers that do not support gradients */
+    background-repeat: no-repeat;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 25%, #eeeeee 75%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 25%,#eeeeee 75%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 25%,#eeeeee 75%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
-@media only screen and (max-device-width: 800px) {
-    #wrap {
-        width: 50%;
-    }
-}
-
-.fish {
-    bottom: -3px;
-    left: 0px;
-    position: absolute;
-    float: left;
-    z-index: 9;
-    width: 81.8%;
-}
-
-.bubble {
-    bottom: -3px;
-    float: right;
-    position: absolute;
-    right: 0;
-    z-index: 7;
-    width: 18.2%;
-}
-
-.fish img, .bubble img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
-/* Style for our header texts
+/* Headings
 	* --------------------------------------- */
 h1 {
-	font-size: 3em;
-	font-family: georgia, serif;
-	color: #5cbca9;
-    letter-spacing: 2px;
-	font-weight: normal;
-	font-style: italic;
-    margin:0;
-    padding:0;
+    font: 24px tahoma, sans-serif;
+    color: #fff;
+    letter-spacing: 3px;
 }
 
-/* Bubbles
-* --------------------------------------- */
-.circle {
-    width:30px;
-    height:30px;
-    border-radius:50%;
-    background-image: url("http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg");
-    background-position: center;
-    float:left;
-    z-index:20;
+/* Sections
+	* --------------------------------------- */
+.page {
+    width: 25%;
+    float: left;
+    height: 50%;
+    top: 25%;
+    display: block;
+    background-color: #8cf5ff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    position: relative;
+    left: 0;
+    z-index: 6;
+}
+
+#container {  
+    width: 100%;
     position: absolute;
-    bottom: 350px;
-    left: 450px;
-    animation: scale 8s 1 ease;
-    animation-fill-mode: forwards;
+    left: 0px;  
 }
 
-@-webkit-keyframes scale {
-    0% { transform: scale(1) translate(0px,0px); }
-    100% { transform: scale(15) translate(30px, -30px); }
-}
-
-@-moz-keyframes scale {
-    0% { transform: scale(1); }
-    100% { transform: scale(15) translate(30px, -30px); }
-}
-
-@-o-keyframes scale {
-    0% { transform: scale(1); }
-    100% { transform: scale(15) translate(30px, -30px); }
-}
-
-@keyframes scale {
-    0% { transform: scale(1); }
-    100% { transform: scale(15) translate(30px, -30px); }
-}
-
-@media only screen and (max-device-width: 800px) {
-    @-webkit-keyframes scale {
-        0% { transform: scale(1) translate(0px,0px); }
-        100% { transform: scale(15) translate(10px, -40px); }
-    }
-
-    @-moz-keyframes scale {
-        0% { transform: scale(1); }
-        100% { transform: scale(15) translate(10px, -40px); }
-    }
-
-    @-o-keyframes scale {
-        0% { transform: scale(1); }
-        100% { transform: scale(15) translate(10px, -40px); }
-    }
-
-    @keyframes scale {
-        0% { transform: scale(1); }
-        100% { transform: scale(15) translate(10px, -40px); }
-    }
-}
-
-.circle-multiline {
-    height: 10px;
-    width: 10px;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: #d2e4ef;
-    opacity: 0.8;
-    float:left;
-    z-index:20;
+#hero {
     position: absolute;
-    bottom: 310px;
-    left: 470px;
+    top: 30%;
+    left: 100px;
+    animation: hover 4s infinite ease;
+    z-index: 9001;
 }
 
-.circle-text {
-    color: white;
-    font-size: 150%;
-    width : 70%;
-	height : 70%;
-	max-width : 70%;
-	max-height : 70%;
-	margin : 0;
-	padding : 0;
-	position : relative;
-	left : 15%;
-	top : 15%;
-}
-
-@keyframes move {
-  50% {
-     transform: translate(160px, -20px);
-  }
+@keyframes hover {
+    0% { transform: translate(0px, 0px); }
+    50% { transform: translate(0px, -20px); }
+    100% {transform: translate(0px, 0px);}
 }
 
 /* Navigation
-* --------------------------------------- */
-ul#navigation {
+	* --------------------------------------- */
+#nav {
     position: fixed;
-    margin: 0px;
-    padding: 0px;
-    top: 10px;
+    top: 0px;
     left: 0px;
-    list-style: none;
-    z-index:9999;
+    width: 100%;
 }
 
-ul#navigation li a {
-    padding-left: 10px;
-    display: block;
-    margin-left: -2px;
-    width: 150px;
-    height: 60px;
-    background-color:#FED4A6;
-    border:1px solid #F8ABAF;
-    color: #ed747a;
-    margin-bottom: 10px;
-    text-align: left;
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.nav li a {
+    background: -webkit-linear-gradient(#53c6d1,rgba(255,0,0,0));
+    background: -moz-linear-gradient(#53c6d1,rgba(255,0,0,0));
+    background: -o-linear-gradient(#53c6d1,rgba(255,0,0,0));
+    background: linear-gradient(#53c6d1,rgba(255,0,0,0));
+    display:block;
+    height: 100px;
+    margin: 0px 20px;
+    width: 120px;
+    float: left;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
     line-height: 60px;
+    color: #53c6d1;
+    text-decoration: none;
+    transition: all .25s ease-in;
 }
 
-ul#navigation li a:hover {
-    color: #fff;
-    border:1px solid #55e0e0;
+.nav li a:hover {
+    background-position-y: 0px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+    .nav li a {
+        margin: 0px 10px;
+        width: 60px;
+    }
 }
