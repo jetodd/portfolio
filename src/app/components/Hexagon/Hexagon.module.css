@@ -1,0 +1,90 @@
+:root {
+    --width: calc(100vw / 5);
+    --x-spacing: calc(100vw / 80);
+
+    --side-length: calc((var(--width) / 2) / cos(30deg));
+    --cap-y-scale: calc(tan(30deg));
+    --cap-height: calc((var(--width) / 2) * var(--cap-y-scale));
+    --cap-unscaled-side-length: calc(var(--width) / sqrt(2));
+    --half-x-spacing: calc(var(--x-spacing) / 2);
+    --y-spacing: calc(var(--half-x-spacing) * sqrt(3));
+    --spacer-width: calc(var(--width) + var(--x-spacing));
+}
+
+.hexagon {
+    position: relative;
+    width: var(--width);
+    height: var(--side-length);
+    margin: var(--cap-height) var(--half-x-spacing) var(--y-spacing);
+    color: rgba(255, 255, 255, 0.75);
+    font: 24px sans-serif;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: inline-block;
+    z-index: 239;
+  
+    &::before, &::after {
+        z-index: -1;
+        content: '';
+        display: block;
+        position: absolute;
+        width: var(--cap-unscaled-side-length);
+        height: var(--cap-unscaled-side-length);
+        background-color: inherit;
+        transform-origin: 0 0;
+        transform: scaleY(var(--cap-y-scale)) rotate(-45deg);
+    }
+  
+  &::before {
+    top: 0;
+  }
+  
+  &::after {
+   top: var(--side-length);
+  }
+}
+
+/* @mixin hexagon($width) {
+  --x-spacing: calc(100vw / 80);
+  $side-length: ($width / 2) / math.cos(30deg);
+  $cap-y-scale: math.tan(30deg);
+  $cap-height: ($width / 2) * $cap-y-scale;
+  $cap-unscaled-side-length: $width / math.sqrt(2);
+  $half-x-spacing: $x-spacing / 2;
+  $y-spacing: $half-x-spacing * math.sqrt(3);
+  $spacer-width: $width + $x-spacing;
+
+  .hexagon {
+    width: $width;
+    height: $side-length;
+    margin: $cap-height $half-x-spacing $y-spacing;
+    font: 30px/#{$side-length} sans-serif;
+    
+    &::before, &::after {
+      width: $cap-unscaled-side-length;
+      height: $cap-unscaled-side-length;
+      transform: scaleY($cap-y-scale) rotate(-45deg);
+    }
+    
+    &::after {
+     top: $side-length;
+    }
+  }
+}
+
+@media (min-width: $md) {
+  @include hexagon(100vw / 5);
+}
+
+@media (min-width: $lg) {
+  @include hexagon(100vw / 6);
+}
+
+@media (min-width: $xl) {
+  @include hexagon(100vw / 8);
+}
+
+.spacer {
+  display: inline-block;
+  width: $spacer-width;
+} */
