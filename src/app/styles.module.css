@@ -59,7 +59,7 @@
         left: 0;
         top: 0;
         z-index: 0;
-        background-color: var(--hello);
+        background-color: var(--color-hello);
         /* background: radial-gradient(ellipse farthest-corner at center bottom, var(--turquoise), #19946b); */
       
         .title {   
@@ -72,7 +72,7 @@
         top: 25%;
         right: 0;
         display: block;
-        background-color: var(--code);
+        background-color: var(--color-code);
         /* background: radial-gradient(ellipse farthest-corner at center bottom, var(--navy-color), #dfac3f); */
       
         .title {
@@ -84,7 +84,7 @@
     .soggy {
         right: 0;
         bottom: 25%;
-        background-color: var(--cosplay);
+        background-color: var(--color-cosplay);
         background-image: url(../../public/froggy.png);
         background-size: 55% auto;
         background-repeat: no-repeat;
@@ -98,7 +98,7 @@
     .weetbix {
         left: 0;
         bottom: 0;
-        background-color: var(--contact);
+        background-color: var(--color-contact);
         
         .title {
             bottom: 0;

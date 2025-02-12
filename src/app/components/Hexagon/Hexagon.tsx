@@ -1,18 +1,17 @@
+import { ICosplay } from '@/app/models/ICosplay';
 import styles from './Hexagon.module.css'
 
-interface IHexagonProps {
-    backgroundColor: string;
-    text?: string;
-}
-
 export default function Hexagon({
-    backgroundColor = '#000',
-    text = ''
-}: IHexagonProps) {
+    name,
+    sauce,
+    image,
+    bgColor,
+}: ICosplay) {
     return (
-        <div className={styles.hexagon} style={{ ["background-color" as any]: backgroundColor }}>
-	        <div className='text'>
-		        {text}
+        <div className={styles.hexagon} style={{ ["background-color" as any]: bgColor }}>
+	        <div>
+		        <p className='text-xl uppercase'>{name}</p>
+                <span className='text-sm'>{sauce}</span>
 	        </div>
         </div>
     )

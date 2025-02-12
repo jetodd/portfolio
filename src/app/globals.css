@@ -5,18 +5,13 @@
 :root {
   --white: #ededed;
   --black : #070707;
-  --background: var(--white);
-  --foreground: var(--black);
-  --cosplay:#3e9d79;
+  --background: var(--black);
+  --foreground: var(--white);
+  --color-cosplay:#3e9d79;
   --more-green: #135f21;
-  --contact:#d59797;
-  --hello:#5aa9bf;
-  --code: #4963ac;
-
-
-  --vert: #0A845B;
-  --bleu: #1D67D3;
-  --rose: #FFB6B6;
+  --color-contact:#d59797;
+  --color-hello:#5aa9bf;
+  --color-code: #4963ac;
 }
 
 body {

@@ -16,10 +16,7 @@
     width: var(--width);
     height: var(--side-length);
     margin: var(--cap-height) var(--half-x-spacing) var(--y-spacing);
-    color: rgba(255, 255, 255, 0.75);
-    font: 24px sans-serif;
     vertical-align: middle;
-    text-transform: uppercase;
     display: inline-block;
     z-index: 239;
   
