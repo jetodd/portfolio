@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue: "var(--color-hello)",
+        green: "var(--color-cosplay)",
+        pink: "var(--color-contact)",
+        kobold: "var(--color-code)",
       },
     },
   },
