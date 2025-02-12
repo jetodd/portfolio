@@ -13,9 +13,7 @@ export default function Page() {
     { id: 7, name: 'Nyx', sauce: 'Hades', image: 'nyx.jpg', bgColor: '#8c60c9' }
   ]
     return <main className={styles.container}>
-      <section >
-        <h1>cosplay</h1>
-
+      <section className="mx-auto h-screen w-screen justify-center mt-4">
         {cosplays.map((cosplay, index) => {
               return <Hexagon {...cosplay}></Hexagon>;
         })}
