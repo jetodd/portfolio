@@ -1,6 +1,6 @@
 import { ICosplay } from "@/app/models/ICosplay";
 import { RefObject } from "react";
-
+import styles from './Panel.module.css'
 
 export default function Panel({ 
     ref,
@@ -25,25 +25,26 @@ export default function Panel({
       ref={ref}
       className={
         "z-[calc(250)] absolute h-full right-0 top-0 text-white " +
-        (isComponentVisible ? "w-5/6" : "w-[20px]") +
-        " max-w-lg transition-all duration-500 ease-in-out transform h-fill"
+        (isComponentVisible ? "w-full md:w-3/4 w-5/6" : "w-0") +
+        " max-w-xl transition-all duration-1000 ease-in-out transform h-fill"
       }
       style={{ ["backgroundColor" as any]: bgColor }}
     >
-      <aside>
-        {isComponentVisible && (
-           <div>{name}</div> 
-        )}
-      </aside>
-      <div>
-        <button
-          type="button"
-          onClick={togglePanel}
-          className="fixed bottom-32 left-[-12px] flex h-6 w-6 items-center justify-center rounded-full bg-white"
-        >
-          {isComponentVisible ? "-" : "+"}
-        </button>
-      </div>
+      {isComponentVisible && (
+        <div className="p-4">
+          <button type="button" onClick={togglePanel} className="content-start text-left">
+            <span className={styles.close}></span>
+          </button>
+          <aside>      
+              <div className="text-2xl">{name}</div>
+              <p>{sauce}</p>
+
+              {text.map((paragraph) => {
+                return <p className="text-justify my-4">{paragraph}</p>;
+              })}
+          </aside>
+        </div>
+       )}
     </div>
   );
 }
