@@ -33,7 +33,7 @@ export default function Panel({
       {isComponentVisible && (
         <div className="p-4">
           <button type="button" onClick={togglePanel} className="content-start text-left">
-            <span className={styles.close}></span>
+            <span className={"inline-block " + styles.close}></span>
           </button>
           <aside>      
               <div className="text-2xl">{name}</div>
