@@ -5,7 +5,7 @@ export default function Page() {
     return <main 
       className="h-dvh w-dvh justify-center content-center text-center" 
       style={{ ["backgroundColor" as any]: 'var(--color-contact)' }}>
-      <section className="-my-32 md:my-0">
+      <section className="-my-32 md:my-0 mx-4">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-8 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[160px]">
           <div className="py-1 text-black rounded-t-full md:rounded-tr-none md:rounded-l-full content-center justify-center"
             style={{ ["backgroundColor" as any]: 'var(--color-pink)' }}>
@@ -36,10 +36,12 @@ export default function Page() {
           </div>
           <div className="bg-white py-1 text-black rounded-b-full md:rounded-bl-none md:rounded-r-full content-center"
             style={{ ["backgroundColor" as any]: 'var(--color-pink)' }}>
-            <span className="grid place-content-center">
-              <ContactItem icon='resume'></ContactItem>
-            </span>
-            Resume
+            <a href="/Resume.pdf" className={styles.link}>
+              <span className="grid place-content-center">
+                <ContactItem icon='resume'></ContactItem>
+              </span>
+              Resume
+            </a>
           </div>
         </div>
       </section>
