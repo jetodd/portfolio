@@ -33,18 +33,20 @@ export default function Panel({
       style={{ ["backgroundColor" as any]: bgColor }}
     >
       {isComponentVisible && (
-        <div className="p-4">
+        <div className="p-4 flex">
           <button type="button" onClick={togglePanel} className="content-start text-left">
             <span className={"inline-block " + styles.close}></span>
-          </button>
-          <aside>      
-              <div className="text-2xl">{name}</div>
-              <p>{sauce}</p>
+
+            <aside>      
+              <p className="text-2xl text-center">{name}</p>
+              <p className="text-center">{sauce}</p>
 
               {text.map((paragraph) => {
                 return <p key={randomKey()} className="text-justify my-4">{paragraph}</p>;
               })}
-          </aside>
+            </aside>
+          </button>
+          
         </div>
        )}
     </div>
