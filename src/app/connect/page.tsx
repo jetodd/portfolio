@@ -1,13 +1,13 @@
 import BackLink from '../components/BackLink/BackLink'
 import ContactItem from '../components/ContactLink/ContactItem'
+import Menu from '../components/Menu/Menu'
 import styles from './styles.module.css'
 
 export default function Page() {
-    return <>
-    <div className="p-[20px]"><BackLink /></div>
-    <main 
-      className="h-dvh m-[-20px] p-[20px] w-dvh justify-center content-center text-center" 
-    >
+    return <main 
+      className="h-dvh w-dvh justify-center content-center text-center" 
+      style={{ ["backgroundColor" as any]: 'var(--color-contact)' }}>
+      <Menu />
       <section className="-my-32 md:my-0 mx-4">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-8 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[160px]">
           <div className="py-1 text-black rounded-t-full md:rounded-tr-none md:rounded-l-full content-center justify-center"
@@ -49,4 +49,4 @@ export default function Page() {
         </div>
       </section>
     </main>
-</>}
+}
