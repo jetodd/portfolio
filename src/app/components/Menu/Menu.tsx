@@ -3,8 +3,15 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Menu({}: {},
-) {
+export interface Menu {
+    currentPage: string;
+}
+
+
+export default function Menu({
+    currentPage
+}: Menu)
+{
     const [isComponentVisible, setIsComponentVisible] = useState<boolean>(false);
     
     const toggleNavigation = () => {
@@ -29,29 +36,39 @@ export default function Menu({}: {},
                     </span>
             </button>
 
-            <Link href="/hello">
+            {}
+
+            {currentPage !== 'hello' && (
+                <Link href="/hello">
                 <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-blue rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
                     " transition-all duration-500 ease-in-out transform -rotate-6 hover:scale-105 hover:rotate-6"}>Hello</button>
-            </Link>
+                </Link>
+            )}
+
+            {currentPage !== 'code' && (
+                <Link href="/code">
+                    <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-kobold rounded-lg " +
+                        (isComponentVisible ? "w-24" : "w-0") +
+                        " transition-all duration-500 ease-in-out transform delay-200 rotate-3 hover:scale-105 hover:-rotate-6"}>Code</button>
+                </Link>
+            )}
             
-            <Link href="/code">
-                <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-kobold rounded-lg " +
-                    (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform delay-200 rotate-3 hover:scale-105 hover:-rotate-6"}>Code</button>
-            </Link>
-
-            <Link href="/cosplay">
-                <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-green rounded-lg " +
-                    (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform delay-500 -rotate-6 hover:scale-105 hover:rotate-3"}>Cosplay</button>
-            </Link>
-
-            <Link href="/contact">
+            {currentPage !== 'cosplay' && (
+                <Link href="/cosplay">
+                    <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-green rounded-lg " +
+                        (isComponentVisible ? "w-24" : "w-0") +
+                        " transition-all duration-500 ease-in-out transform delay-500 -rotate-6 hover:scale-105 hover:rotate-3"}>Cosplay</button>
+                </Link>
+            )}
+            
+            {currentPage !== 'contact' && (
+                <Link href="/contact">
                 <button className={"h-8 -mx-12  bg-hello block mb-4 overflow-hidden bg-pink rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
                     " transition-all duration-500 ease-in-out transform delay-700 rotate-6 hover:scale-105 hover:-rotate-3"}>Contact</button>
             </Link>
+            )}
         </nav>   
     );
 }

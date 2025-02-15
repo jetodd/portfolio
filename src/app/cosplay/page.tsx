@@ -6,7 +6,6 @@ import { Cosplay } from '../models/Cosplay'
 import styles from './styles.module.css'
 import Panel from '../components/Panel/Panel.module';
 import useComponentVisible from '../hooks/useComponentVisible';
-import Link from 'next/link';
 import BackLink from '../components/BackLink/BackLink';
 import Menu from '../components/Menu/Menu';
 
@@ -99,7 +98,7 @@ export default function Page() {
   
     return <main className={styles.container}>
       <BackLink />
-      <Menu />
+      <Menu currentPage='cosplay' />
       <section className="mx-auto h-screen justify-center mt-4">
         {cosplays.map((cosplay, index) => {
           return <Hexagon key={index} {...cosplay}></Hexagon>;
