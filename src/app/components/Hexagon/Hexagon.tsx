@@ -1,4 +1,4 @@
-import { ICosplay } from '@/app/models/Cosplay';
+import { Cosplay } from '@/app/models/Cosplay';
 import styles from './Hexagon.module.css'
 
 export default function Hexagon({
@@ -7,7 +7,7 @@ export default function Hexagon({
     bgColor,
     id,
     onSelectCosplay,
-}: ICosplay) {
+}: Cosplay) {
     const handleClick = () => {
         onSelectCosplay(id);
     };
