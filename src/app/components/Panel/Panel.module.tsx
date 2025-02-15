@@ -1,6 +1,7 @@
 import { ICosplay } from "@/app/models/ICosplay";
 import { RefObject } from "react";
 import styles from './Panel.module.css'
+import { randomKey } from "@/app/utils/key-generator";
 
 export default function Panel({ 
     ref,
@@ -18,6 +19,7 @@ export default function Panel({
 ) {
   const togglePanel = () => {
     setIsComponentVisible(!isComponentVisible);
+    console.log('togglePanel', isComponentVisible);
   };
 
   return (
@@ -40,7 +42,7 @@ export default function Panel({
               <p>{sauce}</p>
 
               {text.map((paragraph) => {
-                return <p className="text-justify my-4">{paragraph}</p>;
+                return <p key={randomKey()} className="text-justify my-4">{paragraph}</p>;
               })}
           </aside>
         </div>
