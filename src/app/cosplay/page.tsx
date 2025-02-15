@@ -63,10 +63,10 @@ export default function Page() {
           return <Hexagon key={index} {...cosplay}></Hexagon>;
         })}        
       </section>
-      {selectedCosplay && <Panel 
+      <Panel 
         ref={ref}
         setIsComponentVisible={setIsComponentVisible}
         isComponentVisible={isComponentVisible} 
-        {...selectedCosplay} />}
+        cosplay={selectedCosplay} />
     </main>
 }

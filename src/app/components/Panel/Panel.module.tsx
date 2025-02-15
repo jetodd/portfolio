@@ -5,21 +5,18 @@ import { randomKey } from "@/app/utils/key-generator";
 
 export default function Panel({ 
     ref,
-    name,
+    cosplay,
     isComponentVisible,
     setIsComponentVisible,
-    sauce,
-    image,
-    bgColor,
-    text
-}: Cosplay & {
-  isComponentVisible: boolean, setIsComponentVisible: (arg: boolean) => void,
+}: {
   ref: RefObject<HTMLDivElement | null>
+  cosplay: Cosplay | undefined,
+  isComponentVisible: boolean,
+  setIsComponentVisible: (arg: boolean) => void,
 },
 ) {
   const togglePanel = () => {
     setIsComponentVisible(!isComponentVisible);
-    console.log('togglePanel', isComponentVisible);
   };
 
   return (
@@ -27,26 +24,25 @@ export default function Panel({
       ref={ref}
       className={
         "z-[calc(250)] absolute h-full right-0 top-0 text-white " +
-        (isComponentVisible ? "w-full md:w-3/4 w-5/6" : "w-0") +
+        (isComponentVisible ? "md:w-3/4 w-5/6" : "w-0") +
         " max-w-xl transition-all duration-1000 ease-in-out transform h-fill"
       }
-      style={{ ["backgroundColor" as any]: bgColor }}
+      style={{ ["backgroundColor" as any]: cosplay?.bgColor }}
     >
       {isComponentVisible && (
         <div className="p-4 flex">
-          <button type="button" onClick={togglePanel} className="content-start text-left">
+          <button type="button" onClick={togglePanel} className="flex content-start text-left">
             <span className={"inline-block " + styles.close}></span>
+          </button>
+          
+          <aside>      
+              <p className="text-2xl text-center">{cosplay!.name}</p>
+              <p className="text-center">{cosplay!.sauce}</p>
 
-            <aside>      
-              <p className="text-2xl text-center">{name}</p>
-              <p className="text-center">{sauce}</p>
-
-              {text.map((paragraph) => {
+              {cosplay!.text.map((paragraph) => {
                 return <p key={randomKey()} className="text-justify my-4">{paragraph}</p>;
               })}
             </aside>
-          </button>
-          
         </div>
        )}
     </div>
