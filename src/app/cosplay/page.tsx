@@ -58,7 +58,7 @@ export default function Page() {
   ]
   
     return <main className={styles.container}>
-      <section className="mx-auto h-screen w-screen justify-center mt-4">
+      <section className="mx-auto h-screen justify-center mt-4">
         {cosplays.map((cosplay, index) => {
           return <Hexagon key={index} {...cosplay}></Hexagon>;
         })}        
