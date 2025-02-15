@@ -1,4 +1,4 @@
-import { ICosplay } from "@/app/models/ICosplay";
+import { Cosplay } from "@/app/models/Cosplay";
 import { RefObject } from "react";
 import styles from './Panel.module.css'
 import { randomKey } from "@/app/utils/key-generator";
@@ -12,7 +12,7 @@ export default function Panel({
     image,
     bgColor,
     text
-}: ICosplay & {
+}: Cosplay & {
   isComponentVisible: boolean, setIsComponentVisible: (arg: boolean) => void,
   ref: RefObject<HTMLDivElement | null>
 },

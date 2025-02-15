@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import Hexagon from '../components/Hexagon/Hexagon'
-import { ICosplay } from '../models/ICosplay'
+import { Cosplay } from '../models/Cosplay'
 import styles from './styles.module.css'
 import Panel from '../components/Panel/Panel.module';
 import useComponentVisible from '../hooks/useComponentVisible';
 
 export default function Page() {
-  const [selectedCosplay, setSelectedCosplay] = useState<ICosplay | undefined>(undefined);
+  const [selectedCosplay, setSelectedCosplay] = useState<Cosplay | undefined>(undefined);
 
   const { ref, isComponentVisible, setIsComponentVisible } =
     useComponentVisible(false);
@@ -18,7 +18,7 @@ export default function Page() {
     setIsComponentVisible(true)
   };
 
-  const cosplays: ICosplay[] = [
+  const cosplays: Cosplay[] = [
     { id: 1, name: 'Lulu', sauce: 'LoL', image: 'lulu.jpg', bgColor: '#6297e5', onSelectCosplay: onSelect,
       text: [
         "Lulu is a yordle from the League of Legends universe. This particular version is her winter wonder skin."

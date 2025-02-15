@@ -1,4 +1,4 @@
-export interface ICosplay {
+export interface Cosplay {
     id: number;
     name: string;
     sauce: string;

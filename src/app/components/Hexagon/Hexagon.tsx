@@ -1,4 +1,4 @@
-import { ICosplay } from '@/app/models/ICosplay';
+import { ICosplay } from '@/app/models/Cosplay';
 import styles from './Hexagon.module.css'
 
 export default function Hexagon({
