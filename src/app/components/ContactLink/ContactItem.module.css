@@ -1,0 +1,17 @@
+.spiky {
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+}
+
+svg.spiky:hover {
+  opacity: 1;
+}
+
+.icon:hover ~use{opacity:1}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
