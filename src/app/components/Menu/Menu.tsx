@@ -32,25 +32,25 @@ export default function Menu({}: {},
             <Link href="/hello">
                 <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-blue rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform -rotate-6"}>Hello</button>
+                    " transition-all duration-500 ease-in-out transform -rotate-6 hover:scale-105 hover:rotate-6"}>Hello</button>
             </Link>
             
             <Link href="/code">
                 <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-kobold rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform delay-200 rotate-3"}>Code</button>
+                    " transition-all duration-500 ease-in-out transform delay-200 rotate-3 hover:scale-105 hover:-rotate-6"}>Code</button>
             </Link>
 
             <Link href="/cosplay">
                 <button className={"h-8 -mx-12 bg-hello block mb-4 overflow-hidden bg-green rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform delay-500 -rotate-4"}>Cosplay</button>
+                    " transition-all duration-500 ease-in-out transform delay-500 -rotate-6 hover:scale-105 hover:rotate-3"}>Cosplay</button>
             </Link>
 
             <Link href="/contact">
                 <button className={"h-8 -mx-12  bg-hello block mb-4 overflow-hidden bg-pink rounded-lg " +
                     (isComponentVisible ? "w-24" : "w-0") +
-                    " transition-all duration-500 ease-in-out transform delay-700 rotate-6"}>Contact</button>
+                    " transition-all duration-500 ease-in-out transform delay-700 rotate-6 hover:scale-105 hover:-rotate-3"}>Contact</button>
             </Link>
         </nav>   
     );
