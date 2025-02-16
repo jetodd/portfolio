@@ -13,7 +13,7 @@ export default function Page() {
       className="h-dvh w-full justify-center content-center"
       style={{ backgroundColor: "var(--color-code)" }}
     >
-      <BackLink bgColor="azure" color="white" />
+      <BackLink bgColor="sky-800" color="white" />
       <Menu currentPage="code" color="azure" />
       <section className="mx-auto -my-32 md:my-0 grid h-screen w-screen flex-col justify-center">
         <CodeItem
