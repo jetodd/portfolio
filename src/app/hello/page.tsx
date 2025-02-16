@@ -1,5 +1,6 @@
 "use client"
 
+import BackLink from '../components/BackLink/BackLink';
 import Menu from '../components/Menu/Menu';
 import { Typewriter } from '../components/Typewriter/Typewriter';
 import styles from './styles.module.css'
@@ -27,6 +28,7 @@ export default function Page() {
           <div className={`${styles.cloud} ${styles.five} left-3/4 top-1/3 opacity-75`}></div>
         </div> */}
 
+      <BackLink bgColor='sky' color='white' />
       <Menu currentPage='hello' color='sky' />
       <section className="content-center mx-auto md:my-0 flex h-screen w-screen flex-col items-start justify-center text-white">
           <h1 className="text-2xl md:text-5xl mx-4">
