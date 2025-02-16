@@ -19,6 +19,7 @@
     vertical-align: middle;
     display: inline-block;
     z-index: 239;
+    cursor: pointer;
   
     &::before, &::after {
         z-index: -1;
@@ -40,6 +41,12 @@
    top: var(--side-length);
   }
 }
+
+.spacer {
+  display: inline-block;
+  width: calc(var(--width) + var(--x-spacing));
+}
+
 
 /* @mixin hexagon($width) {
   --x-spacing: calc(100vw / 80);

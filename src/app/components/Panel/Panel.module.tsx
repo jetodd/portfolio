@@ -23,7 +23,7 @@ export default function Panel({
     <div
       ref={ref}
       className={
-        "z-[calc(250)] absolute h-full right-0 top-0 text-white " +
+        "z-[calc(250)] absolute h-screen right-0 top-0 text-white " +
         (isComponentVisible ? "w-full md:w-5/6 lg:w-3/4" : "w-0") +
         " max-w-xl transition-all duration-1000 ease-in-out transform h-fill"
       }

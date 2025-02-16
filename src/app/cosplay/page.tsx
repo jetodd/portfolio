@@ -95,14 +95,32 @@ export default function Page() {
     },
     
   ]
+
+  const smallSpacers = [2, 3, 5, 6, 8, 9, 11, 12]
+  const mediumSpacers = [4, 7, 11, 14]
+
+  const spacerClassName = (index: number) => {
+    if (smallSpacers.includes(index)) {
+      return "spacer block md:hidden"
+    }
+    if (mediumSpacers.includes(index)) {
+      return "spacer hidden md:block"
+    }
+    return "hidden"
+  }
   
     return <main className={styles.container}>
       <BackLink bgColor='mint' color='green' />
       <Menu currentPage='cosplay' color='mint' />
-      <section className="mx-auto h-screen justify-center mt-4">
+      <section className="mx-auto h-screen justify-center mt-14">
         {cosplays.map((cosplay, index) => {
-          return <Hexagon key={index} {...cosplay}></Hexagon>;
-        })}        
+          return (
+            <span key={index}>
+            <div className={spacerClassName(index)} />
+            <Hexagon {...cosplay}></Hexagon>
+            </span>
+          )
+        })}
       </section>
       <Panel 
         ref={ref}
