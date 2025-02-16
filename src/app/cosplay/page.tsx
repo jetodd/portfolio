@@ -97,8 +97,8 @@ export default function Page() {
   ]
   
     return <main className={styles.container}>
-      <BackLink />
-      <Menu currentPage='cosplay' />
+      <BackLink bgColor='mint' color='green' />
+      <Menu currentPage='cosplay' color='mint' />
       <section className="mx-auto h-screen justify-center mt-4">
         {cosplays.map((cosplay, index) => {
           return <Hexagon key={index} {...cosplay}></Hexagon>;

@@ -8,11 +8,14 @@
   --background: var(--black);
   --foreground: var(--white);
   --color-cosplay:#3e9d79;
-  --more-green: #135f21;
   --color-contact:#ef999f;
-  --color-pink:#edc9c9;
   --color-hello:#7dc0d3;
   --color-code: #4963ac;
+
+  --color-mint: #87c9b1;
+  --color-rose:#edc9c9;
+  --color-sky: #c0d9e0;
+  --color-azure: #7994c3;
 }
 
 body {

@@ -15,6 +15,10 @@ export default {
         green: "var(--color-cosplay)",
         pink: "var(--color-contact)",
         kobold: "var(--color-code)",
+        mint: "var(--color-mint)",
+        sky: "var(--color-sky)",
+        rose: "var(--color-rose)",
+        azure: "var(--color-azure)"
       },
     },
   },
