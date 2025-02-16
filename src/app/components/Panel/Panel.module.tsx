@@ -27,7 +27,7 @@ export default function Panel({
         (isComponentVisible ? "w-full md:w-5/6 lg:w-3/4" : "w-0") +
         " max-w-xl transition-all duration-1000 ease-in-out transform h-fill"
       }
-      style={{ ["backgroundColor" as any]: cosplay?.bgColor }}
+      style={{ backgroundColor: cosplay?.bgColor }}
     >
       {isComponentVisible && (
         <div className="p-4 flex">

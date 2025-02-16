@@ -25,13 +25,13 @@ export default function Menu({
                 <span className={`block transition-all duration-200 ease-out 
                     h-1 w-10 rounded-sm ${isComponentVisible ? 
                     'rotate-45 translate-y-2' : '-translate-y-0.5'}`} 
-                    style={{ ["backgroundColor" as any]: `var(--color-${color})`}}></span>
+                    style={{ backgroundColor: `var(--color-${color})`}}></span>
                 <span className={`bg-${color} block transition-all duration-200 ease-out 
                     h-1 w-10 rounded-sm my-1 ${isComponentVisible ? 'opacity-0' : 'opacity-100'}`}
-                    style={{ ["backgroundColor" as any]: `var(--color-${color})` }}></span>
+                    style={{ backgroundColor: `var(--color-${color})` }}></span>
                 <span className={`bg-${color} block transition-all duration-200 ease-out 
                     h-1 w-10 rounded-sm ${isComponentVisible ? '-rotate-45 -translate-y-2' : 'translate-y-0.5'}`} 
-                    style={{ ["backgroundColor" as any]: `var(--color-${color})` }}>
+                    style={{ backgroundColor: `var(--color-${color})` }}>
                     </span>
             </button>
 

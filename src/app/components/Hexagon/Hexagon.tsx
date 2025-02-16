@@ -13,7 +13,7 @@ export default function Hexagon({
     };
 
     return (
-        <div className={styles.hexagon} style={{ ["backgroundColor" as any]: bgColor }} onClick={handleClick}>
+        <div className={styles.hexagon} style={{ backgroundColor: bgColor }} onClick={handleClick}>
 	        <div className='align-middle'>
 		        <p className='text-sm md:text-xl uppercase'>{name}</p>
                 <span className='text-xs md:text-sm'>{sauce}</span>
