@@ -20,7 +20,6 @@ export default function CodeItem({
   techStack,
   description,
 }: CodeItemProps & { index: number, total: number }) {
-  console.log(index)
   return (
     <div 
       className="grid [grid-area:stack] place-content-center max-w-sm p-6 bg-sky-800 border rounded-lg shadow-xs border-gray-700 mb-1"
