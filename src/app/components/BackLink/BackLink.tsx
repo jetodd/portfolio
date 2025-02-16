@@ -10,9 +10,9 @@ export default function BackLink({
   color
 }: Link) {
   return (
-    <Link className="flex hover:underline" href="../">
+    <Link className={`flex hover:underline absolute top-[30px] ml-4`} style={{textDecorationColor: `var(--color-${color})`}} href="../">
       <div className={`text-${color} rounded-lg px-4 py-2 flex`}
-        style={{ ["backgroundColor" as any]: `var(--color-${bgColor})` }}>
+        style={{ backgroundColor: `var(--color-${bgColor})`}}>
       <svg
         className="w-5 mr-1"
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export default function BackLink({
           d="M244 400L100 256l144-144M120 256h292"
         />
       </svg>
-      <span className={`text-${color} text-green`}>Back</span>
+      <span className={`text-${color}`}>Back</span>
       </div>
     </Link>
   );
