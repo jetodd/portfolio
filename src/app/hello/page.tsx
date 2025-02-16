@@ -19,7 +19,10 @@ export default function Page() {
   ];
 
     return <main 
-      className={`h-dvh w-dvh ${styles.main} overflow-hidden top-0`}>
+      className={`h-dvh w-dvh ${styles.main} overflow-hidden top-0`}
+      style={{ backgroundColor: 'var(--color-hello)' }}
+      
+      >
         {/* <div className="cloud fixed top-0 left-0 w-full h-3/4">
           <div className={`${styles.cloud} ${styles.one} left-1/4 top-1/4 opacity-80`}></div>
           <div className={`${styles.cloud} ${styles.two} left-1/3 top-1/3 opacity-65`}></div>

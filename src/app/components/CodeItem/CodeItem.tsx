@@ -11,7 +11,7 @@ export type CodeItemProps = {
 
 export default function CodeItem({title, icon, githubRepo, description}: CodeItemProps) {
   return (
-    <div className="max-w-sm p-6 bg-sky-900 border rounded-lg shadow-sm border-gray-700 mb-1">
+    <div className="max-w-sm p-6 bg-sky-900 border rounded-lg shadow-xs border-gray-700 mb-1">
       <div className={"w-12"}>{icon}</div>
       <a href="#">
         <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">

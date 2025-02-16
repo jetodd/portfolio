@@ -5,11 +5,13 @@ import Portfolio from "../components/Icons/Portfolio";
 import Recipes from "../components/Icons/Recipes";
 import Menu from "../components/Menu/Menu";
 
+import './styles.module.css';
+
 export default function Page() {
   return (
     <main
-      className="h-dvh w-dvh justify-center content-center"
-      style={{ backgroundColor: "var(--color-code)" }}
+      className="h-dvh w-full justify-center content-center"
+      style={{ backgroundColor: 'var(--color-code)' }}
     >
       <BackLink bgColor="azure" color="white" />
       <Menu currentPage="code" color="azure" />

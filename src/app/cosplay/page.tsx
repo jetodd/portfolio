@@ -109,7 +109,7 @@ export default function Page() {
     return "hidden"
   }
   
-    return <main className={styles.container}>
+    return <main className={styles.container} style={{ backgroundColor: 'var(--color-cosplay)' }}>
       <BackLink bgColor='mint' color='green' />
       <Menu currentPage='cosplay' color='mint' />
       <section className="mx-auto h-screen justify-center mt-14">

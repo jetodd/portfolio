@@ -106,7 +106,7 @@
         }
     }
 
-    @media screen(sm) {
+    @media (width >= 40rem) {
         .container {
             transform: rotate(-7deg) scale(1.6) translate(1.2em, 0.5em);
         }
@@ -160,7 +160,7 @@
         }
     }
       
-    @media screen(lg) {
+    @media (width >= 64rem) {
         .container {
           transform: rotate(-7deg) scale(1.6) translate(1em, 0.5em);
         }
@@ -168,5 +168,5 @@
         span {
           font-size: 3.5rem;
         }
-    }    
+    } 
 }
