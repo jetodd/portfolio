@@ -41,8 +41,8 @@ export default function CodeItem({
         </a>
       </div>
       <div className="flex mb-3">
-        <a href="#">
-          <h2 className="mb-2 text-3xl rounded-md border-1 border-sky-950 px-2 bg-sky-800 relative -left-15 font-semibold tracking-tight dark:text-white">
+        <a href={siteUrl}>
+          <h2 className="mb-2 text-3xl rounded-md border-1 border-sky-950 px-2 hover:bg-sky-950 bg-sky-800 relative -left-15 font-semibold tracking-tight dark:text-white">
             {title}
           </h2>
         </a>
