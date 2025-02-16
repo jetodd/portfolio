@@ -16,6 +16,7 @@
   --color-rose:#e6cfcf;
   --color-sky: #c8dde2;
   --color-azure: #a4bbe2;
+  --color-black: var(--black);
 }
 
 body {

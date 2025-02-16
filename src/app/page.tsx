@@ -25,7 +25,7 @@ export default function Home() {
             
           <div className={`${styles.box} ${styles.weetbix}`}>
             <div className={styles.title}>
-              <Link href="/connect"><h1 className={styles.angle}>Connect</h1></Link>
+              <Link href="/contact"><h1 className={styles.angle}>Contact</h1></Link>
             </div>
           </div>
         </div>
