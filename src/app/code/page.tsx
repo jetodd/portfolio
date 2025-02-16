@@ -5,20 +5,39 @@ import Portfolio from "../components/Icons/Portfolio";
 import Recipes from "../components/Icons/Recipes";
 import Menu from "../components/Menu/Menu";
 
-import './styles.module.css';
+import "./styles.module.css";
 
 export default function Page() {
   return (
     <main
       className="h-dvh w-full justify-center content-center"
-      style={{ backgroundColor: 'var(--color-code)' }}
+      style={{ backgroundColor: "var(--color-code)" }}
     >
       <BackLink bgColor="azure" color="white" />
       <Menu currentPage="code" color="azure" />
       <section className="mx-auto -my-32 md:my-0 grid h-screen w-screen flex-col justify-center">
-        <CodeItem title="Portfolio" githubRepo="portfolio" description="TODO" icon={<Portfolio />} />
-        <CodeItem title="Dicey" githubRepo="dicey" description="TODO" icon={<Dice />} />
-        <CodeItem title="Recipes" githubRepo="recipes" description="TODO" icon={<Recipes />} />
+        <CodeItem
+          title="Portfolio"
+          githubRepo="portfolio"
+          description="The site that you are currently viewing. It is a showcase of my work and a playground for me to experiment with new technologies."
+          icon={<Portfolio />}
+          techStack={["Next.js", "TypeScript", "Tailwind CSS"]}
+        />
+        <CodeItem
+          title="Dicey"
+          githubRepo="dicey"
+          description="A fun little dice rolling app that I made for when people forget Dice and want to play RPG games."
+          icon={<Dice />}
+          techStack={["Next.js", "TypeScript", "Tailwind CSS"]}
+          
+        />
+        <CodeItem
+          title="Recipes"
+          githubRepo="recipes"
+          description="Keeps track of all the recipes that I like, what I'm cooking this week and what needs buying at the supermarket."
+          icon={<Recipes />}
+          techStack={["Django", "Python", "Tailwind CSS", "PostgreSQL"]}
+        />
       </section>
     </main>
   );

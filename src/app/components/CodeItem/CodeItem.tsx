@@ -5,7 +5,7 @@ export type CodeItemProps = {
     title: string
     icon: JSX.Element
     githubRepo: string
-
+    techStack: string[]
     description: string
 }
 
