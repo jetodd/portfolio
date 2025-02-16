@@ -1,3 +1,9 @@
 body {
     background: var(--color-code);
 }
+
+.stack {
+    display: inline-grid;
+    place-items: center;
+    grid-template-areas: 'stack';
+}

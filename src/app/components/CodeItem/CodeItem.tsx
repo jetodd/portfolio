@@ -11,15 +11,25 @@ export type CodeItemProps = {
 };
 
 export default function CodeItem({
+  index,
+  total,
   title,
   icon,
   githubRepo,
   siteUrl,
   techStack,
   description,
-}: CodeItemProps) {
+}: CodeItemProps & { index: number, total: number }) {
+  console.log(index)
   return (
-    <div className="max-w-sm p-6 bg-sky-800 border rounded-lg shadow-xs border-gray-700 mb-1">
+    <div 
+      className="grid [grid-area:stack] place-content-center max-w-sm p-6 bg-sky-800 border rounded-lg shadow-xs border-gray-700 mb-1"
+      style={{ 
+        marginLeft: `${index * 3}rem`, 
+        zIndex: `${total - index}`,
+        transform: `rotate(-${(index + 1) * 5}deg) translateX(${index * 2}rem) translateY(-${index * 2}rem)`,
+      }}
+      >
       <p className="mb-3 font-normal text-gray-450">
         {description}
       </p>
