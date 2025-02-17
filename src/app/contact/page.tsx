@@ -5,13 +5,16 @@ import styles from './styles.module.css'
 
 export default function Page() {
     return <main 
-      className="h-dvh w-full justify-center content-center text-center"
+      className="h-dvh w-full text-center"
       style={{ backgroundColor: 'var(--color-contact)' }}
       >
         <BackLink bgColor={'rose'} color={'black'} />
       <Menu currentPage='contact' color='rose' />
-      <section className="-my-32 md:my-0 mx-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[160px]">
+      <section className="md:my-0 mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[80px]">
+          <div className='col-span-1 -mb-6 md:col-span-2 md:col-start-3 md:-mb-4 mt-8 z-100 max-w-3xs mx-auto'>
+            <img src="/piggy.png"></img>
+          </div>
           <div className="py-1 text-black rounded-t-full md:rounded-tr-none md:rounded-l-full content-center justify-center"
             style={{ backgroundColor: 'var(--color-rose)' }}>
             <a href="https://www.linkedin.com/in/jess-todd-76b75b90/" className={styles.link} target="_blank">
