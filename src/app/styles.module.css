@@ -80,21 +80,18 @@
             right: 0;
         }
     }
-      
+
     .soggy {
         right: 0;
         bottom: 25%;
         background-color: var(--color-cosplay);
-        background-image: url(../../public/froggy.png);
-        background-size: 55% auto;
-        background-repeat: no-repeat;
-      
+        background-image: url(../../public/froggy.png);      
         .title {
             bottom: 0;
             right: 0;
         }
     }
-      
+
     .weetbix {
         left: 0;
         bottom: 0;

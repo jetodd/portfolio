@@ -17,7 +17,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`${styles.box} ${styles.soggy}`}>
+          <div className={`${styles.box} ${styles.soggy} bg-no-repeat bg-contain md:bg-(length:--image-size)`}>
             <div className={styles.title}>
               <Link href="/cosplay"><h1 className={styles.angle}>Cosplay</h1></Link>
             </div>
