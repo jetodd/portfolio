@@ -31,7 +31,12 @@
         }
     }
       
-    h1 {
+    .angle {
+        background-image: linear-gradient(135deg, #fff 0%, #fff 50%, transparent 50.1%);
+        background-size: 0% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+
         cursor: pointer;
         -webkit-text-stroke-color: #fff;
         -webkit-text-stroke-width: 0.02em;
@@ -41,13 +46,6 @@
         color: #fff;
         font-size: 3rem;
         font-weight: 700;
-    }
-
-    .angle {
-        background-image: linear-gradient(135deg, #fff 0%, #fff 50%, transparent 50.1%);
-        background-size: 0% 100%;
-        -webkit-background-clip: text;
-        background-clip: text;
         
         &:hover {
             background-size: 220% 100%;
@@ -107,11 +105,7 @@
         .container {
             transform: rotate(-7deg) scale(1.6) translate(1.2em, 0.5em);
         }
-      
-        span {
-          font-size: 1.8rem;
-        }
-      
+            
         .box {
             width: 50%;
             height: 50%;
@@ -160,10 +154,6 @@
     @media (width >= 64rem) {
         .container {
           transform: rotate(-7deg) scale(1.6) translate(1em, 0.5em);
-        }
-      
-        span {
-          font-size: 3.5rem;
         }
     } 
 }

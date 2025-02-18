@@ -19,7 +19,7 @@ export default function Page() {
   ];
 
     return <main 
-      className={`h-dvh w-dvh ${styles.main} overflow-hidden top-0`}
+      className={`h-dvh w-full ${styles.main} overflow-hidden top-0`}
       >
         {/* <div className="cloud fixed top-0 left-0 w-full h-3/4">
           <div className={`${styles.cloud} ${styles.one} left-1/4 top-1/4 opacity-80`}></div>

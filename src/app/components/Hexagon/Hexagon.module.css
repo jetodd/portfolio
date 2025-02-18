@@ -1,4 +1,4 @@
-:root {
+.hexagon {
     --width: calc(100vw / 5);
     --x-spacing: calc(100vw / 80);
 

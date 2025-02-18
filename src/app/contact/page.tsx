@@ -2,6 +2,7 @@ import BackLink from '../components/BackLink/BackLink'
 import ContactItem from '../components/ContactLink/ContactItem'
 import Menu from '../components/Menu/Menu'
 import styles from './styles.module.css'
+import Image from 'next/image'
 
 export default function Page() {
     return <main 
@@ -13,10 +14,10 @@ export default function Page() {
       <section className="md:my-0 mx-4">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[80px]">
           <div className='hidden md:col-span-1 md:col-start-2 md:-mb-4 md:block md:mt-8 md:z-100 md:mx-auto'>
-            <img src="/panda.png"></img>
+            <img src="/panda.png" alt='Trash panda, my spirit animal' width={"300"} height="300"></img>
           </div>
           <div className='z-100 col-span-1 md:col-start-3 -mb-6 md:-mb-4 md:mt-8 mx-auto'>
-            <img src="/piggy.png"></img>
+            <img src="/piggy.png" alt='Pigeon, may poop on everything you love' width={"300"} height="300"></img>
           </div>
           <div className='hidden md:block'></div>
           <div className="py-1 text-black rounded-t-full md:rounded-tr-none md:rounded-l-full content-center justify-center"

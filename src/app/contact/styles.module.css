@@ -1,7 +1,3 @@
 .link:hover svg {
     opacity: 1;
 }
-
-body {
-    background-color: var(--color-contact);
-}
