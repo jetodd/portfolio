@@ -5,9 +5,7 @@ import styles from './styles.module.css'
 
 export default function Page() {
     return <main 
-      className="h-dvh w-full text-center"
-      style={{ backgroundColor: 'var(--color-contact)' }}
-      >
+      className={`h-dvh w-full text-center ${styles.main}`}>
         <BackLink bgColor={'rose'} color={'black'} />
       <Menu currentPage='contact' color='rose' />
       <section className="md:my-0 mx-4">
