@@ -1,5 +1,0 @@
-.stack {
-    display: inline-grid;
-    place-items: center;
-    grid-template-areas: 'stack';
-}

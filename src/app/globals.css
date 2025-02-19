@@ -21,13 +21,16 @@
 @theme {
   --color-cosplay: #3e9d79;
   --color-contact: #e4868c;
-  --color-hello: #7dc0d3;
+  --color-hello: #5baac1;
   --color-code: #4963ac;
 
   --color-mint: #9bd6c0;
   --color-rose:#e6cfcf;
   --color-sky: #c8dde2;
   --color-azure: #a4bbe2;
+
+  --color-bleu: #869acc;
+
   --color-black: #070707;
 
   --image-size: 55%;

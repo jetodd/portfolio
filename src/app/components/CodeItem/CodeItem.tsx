@@ -3,66 +3,41 @@ import GitHub from "../Icons/GitHub";
 
 export type CodeItemProps = {
   title: string;
-  icon: JSX.Element;
+  icon?: JSX.Element;
   githubRepo: string;
   techStack: string[];
   description: string;
-  siteUrl: string;
+  siteUrl?: string;
 };
 
 export default function CodeItem({
-  index,
-  total,
   title,
-  icon,
   githubRepo,
   siteUrl,
   techStack,
   description,
 }: CodeItemProps & { index: number, total: number }) {
   return (
-    <div 
-      className="grid [grid-area:stack] place-content-center max-w-sm p-6 bg-sky-800 border rounded-lg shadow-xs border-gray-700 mb-1"
-      style={{ 
-        marginLeft: `${index * 3}rem`, 
-        zIndex: `${total - index}`,
-        transform: `rotate(-${(index + 1) * 5}deg) translateX(${index * 2}rem) translateY(-${index * 2}rem)`,
-      }}
-      >
-      <p className="mb-3 font-normal text-gray-450">
-        {description}
-      </p>
+    <div className={`bg-code rounded-lg mx-4 my-6 border-2 border-bleu px-4 py-2`}>
+      <span className={`dark:text-white text-lg uppercase`}>
+            {title}
+          </span>
+      <p className="mb-3">{description}</p>
       <div className="flex mb-3 gap-3">
         <a
-          className="w-7"
+          className="w-9"
           title="View on GitHub"
           target="_blank"
           href={`https://github.com/jetodd/${githubRepo}`}
         >
           <GitHub />
         </a>
-        <a
-          className="w-14 text-center align-middle text-xs bg-sky-900 hover:bg-sky-950 text-gray-350 rounded-full px-2 py-1 mr-1"
-          target="_blank"
-          href={siteUrl}
-        >
-          Site
-        </a>
-      </div>
-      <div className="flex mb-3">
-        <a href={siteUrl}>
-          <h2 className="mb-2 text-3xl rounded-md border-1 border-sky-950 px-2 hover:bg-sky-950 bg-sky-800 relative -left-15 font-semibold tracking-tight dark:text-white">
-            {title}
-          </h2>
-        </a>
-        <div className={"w-12 -ml-10"}>{icon}</div>
       </div>
       <div className="flex">
         {techStack.map((tech) => (
           <span
             key={tech}
-            className="text-xs bg-sky-900 text-gray-350 rounded-full px-2 py-1 mr-1"
-          >
+            className="text-xs text-gray-350 rounded-full bg-bleu px-2 py-1 mr-1">
             {tech}
           </span>
         ))}
