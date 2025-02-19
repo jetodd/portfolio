@@ -1,12 +1,9 @@
-import { collectMeta } from "next/dist/build/utils";
 import BackLink from "../components/BackLink/BackLink";
 import CodeItem, { CodeItemProps } from "../components/CodeItem/CodeItem";
 import Dice from "../components/Icons/Dice";
 import Portfolio from "../components/Icons/Portfolio";
 import Recipes from "../components/Icons/Recipes";
 import Menu from "../components/Menu/Menu";
-
-import styles from "./styles.module.css";
 
 const items: CodeItemProps[] = [
   {

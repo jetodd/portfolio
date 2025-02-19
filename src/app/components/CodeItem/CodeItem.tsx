@@ -13,7 +13,6 @@ export type CodeItemProps = {
 export default function CodeItem({
   title,
   githubRepo,
-  siteUrl,
   techStack,
   description,
 }: CodeItemProps & { index: number, total: number }) {
