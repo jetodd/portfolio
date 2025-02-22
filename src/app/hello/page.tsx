@@ -15,11 +15,12 @@ export default function Page() {
     "making fetch happen", 
     "drawing cute things", 
     "trying experimental recipes", 
-    "dreaming of whimsy"
+    "dreaming of whimsy",
+    "problem solving"
   ];
 
     return <main 
-      className={`h-dvh w-full ${styles.main} overflow-hidden top-0`}
+      className={`w-dvw top-0 bg-hello ${styles.main}`}
       >
         {/* <div className="cloud fixed top-0 left-0 w-full h-3/4">
           <div className={`${styles.cloud} ${styles.one} left-1/4 top-1/4 opacity-80`}></div>
@@ -31,44 +32,44 @@ export default function Page() {
 
       <BackLink bgColor='sky' color='black' />
       <Menu currentPage='hello' bgColor='sky' color='black' />
-      <section className="mx-20 md:my-0 flex h-screen w-screen flex-col text-navy">
-          <h1 className="text-4xl md:text-6xl mt-40">
-            <span className='font-[Oliver]'>Hi, my name is Jess</span>
+      <section className="mx-10 md:my-0 flex flex-col text-white">
+          <h1 className="text-4xl mx-2 mt-25 md:text-6xl md:mt-40">
+            <span className='font-[Oliver]'>Hi, my name is Jess.</span>
           </h1>
-          <p className="mt-2 md:mt-4 md:text-lg font-semibold md:text-paper text-navy">
+          <p className="mt-2 mx-2 md:mt-4 md:text-lg font-semibold md:text-paper">
             A creative software developer based in the UK with over 10 years of experience making cool stuff.
           </p>
-          <div className="mt-2 mb-4 md:mt-4 md:text-lg font-semibold md:text-paper text-navy">
+          <div className="mt-2 mb-4 mx-2 md:mt-4 md:text-lg font-semibold md:text-paper">
             I spend my freetime <Typewriter words={toDo} />
           </div>
 
-          <h2>Languages</h2>
+          <span className='mx-2 text-lg'>Languages</span>
           <ul className={`list-none mb-4 ${styles.tags}`}>
-            <li className={`ml-0 mr-2 ${styles.tag}`}>C#</li>
-            <li className={`mx-2 ${styles.tag}`}>HTML</li>
-            <li className={`mx-2 ${styles.tag}`}>CSS</li>
-            <li className={`mx-2 ${styles.tag}`}>JavaScript</li>
-            <li className={`mx-2 ${styles.tag}`}>TypeScript</li>
-            <li className={`mx-2 ${styles.tag}`}>Python</li>
+            <li className={`m-2 ${styles.tag}`}>C#</li>
+            <li className={`m-2 ${styles.tag}`}>HTML</li>
+            <li className={`m-2 ${styles.tag}`}>CSS</li>
+            <li className={`m-2 ${styles.tag}`}>JavaScript</li>
+            <li className={`m-2 ${styles.tag}`}>TypeScript</li>
+            <li className={`m-2 ${styles.tag}`}>Python</li>
           </ul>
-          <h2>Frameworks & libraries</h2>
+          <span className='mx-2 text-lg'>Frameworks & libraries</span>
           <ul className={`list-none mb-4 ${styles.tags}`}>
-            <li className={`ml-0 mr-2 ${styles.tag}`}>.NET Core</li>
-            <li className={`mx-2 ${styles.tag}`}>Angular</li>
-            <li className={`mx-2 ${styles.tag}`}>React</li>
-            <li className={`mx-2 ${styles.tag}`}>Next.JS</li>
-            <li className={`mx-2 ${styles.tag}`}>Tailwind CSS</li>
-            <li className={`mx-2 ${styles.tag}`}>Django</li>
+            <li className={`m-2 ${styles.tag}`}>.NET Core</li>
+            <li className={`m-2 ${styles.tag}`}>Angular</li>
+            <li className={`m-2 ${styles.tag}`}>React</li>
+            <li className={`m-2 ${styles.tag}`}>Next.JS</li>
+            <li className={`m-2 ${styles.tag}`}>Tailwind CSS</li>
+            <li className={`m-2 ${styles.tag}`}>Django</li>
           </ul>
-          <h2>Tools & technology</h2>
+          <span className='mx-2 text-lg'>Tools & technology</span>
           <ul className={`list-none mb-4 ${styles.tags}`}>
-            <li className={`ml-0 mr-2 ${styles.tag}`}>Azure</li>
-            <li className={`mx-2 ${styles.tag}`}>Azure DevOps</li>
-            <li className={`mx-2 ${styles.tag}`}>Git</li>
-            <li className={`mx-2 ${styles.tag}`}>Docker</li>
-            <li className={`mx-2 ${styles.tag}`}>Kubernetes</li>
-            <li className={`mx-2 ${styles.tag}`}>Terraform</li>
-            <li className={`mx-2 ${styles.tag}`}>NodeJs</li>
+            <li className={`m-2 ${styles.tag}`}>Azure</li>
+            <li className={`m-2 ${styles.tag}`}>Azure DevOps</li>
+            <li className={`m-2 ${styles.tag}`}>Git</li>
+            <li className={`m-2 ${styles.tag}`}>Docker</li>
+            <li className={`m-2 ${styles.tag}`}>Kubernetes</li>
+            <li className={`m-2 ${styles.tag}`}>Terraform</li>
+            <li className={`m-2 ${styles.tag}`}>NodeJs</li>
           </ul>
       </section>
     </main>

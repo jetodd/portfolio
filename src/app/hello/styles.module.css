@@ -1,6 +1,4 @@
 .main {
-	background: linear-gradient(180deg, var(--color-hello) 0%, rgba(200,221,226,1) 100%);
-
 	.tags {
 		.tag {
 			display: inline-block;
@@ -9,7 +7,6 @@
 			color: white;
 			display: inline-block;
 			padding: 6px 10px;
-			font-size: 1.1rem;
 		}
 	}
 }
