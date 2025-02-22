@@ -18,6 +18,12 @@
   }
 }
 
+@font-face {
+  font-family: "Oliver";
+  font-style: normal;
+  src: url("../../fonts/Oliver-Regular.otf") format("opentype");
+}
+
 @theme {
   --color-cosplay: #3e9d79;
   --color-contact: #d3938c;
