@@ -6,8 +6,8 @@ import styles from './styles.module.css'
 export default function Page() {
     return <main 
       className={`h-dvh w-full text-center ${styles.main}`}>
-        <BackLink bgColor={'rose'} color={'black'} />
-      <Menu currentPage='contact' color='rose' />
+      <BackLink bgColor={'rose'} color={'black'} />
+      <Menu currentPage='contact' color='black' bgColor='rose' />
       <section className="md:my-0 mx-4">
         <div className="grid grid-cols-1 md:grid-cols-4 mx-auto max-w-[200px] md:max-w-5xl md:min-h-[80px]">
           <div className='hidden md:col-span-1 md:col-start-2 md:-mb-4 md:block md:mt-8 md:z-100 md:mx-auto'>

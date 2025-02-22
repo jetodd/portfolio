@@ -20,25 +20,24 @@
 
 @theme {
   --color-cosplay: #3e9d79;
-  --color-contact: #e4868c;
-  --color-hello: #5baac1;
-  --color-code: #4963ac;
+  --color-contact: #d3938c;
+  --color-hello: #5ac1b2;
+  --color-code: #6570d3;
 
   --color-mint: #9bd6c0;
-  --color-rose:#e6cfcf;
-  --color-sky: #c8dde2;
-  --color-azure: #a4bbe2;
-
+  --color-rose:#e5c2bc;
+  --color-sky: #adddd6;
+  --color-azure: #8f97d8;
   --color-bleu: #869acc;
-
   --color-black: #070707;
-
+  --color-navy: #2f3c4f;
   --image-size: 55%;
 }
 
 :root {
   --white: #ededed;
   --black : #070707;
+  --test: rgb(88, 126, 221);
   --background: var(--black);
   --foreground: var(--white);
 }

@@ -29,18 +29,47 @@ export default function Page() {
           <div className={`${styles.cloud} ${styles.five} left-3/4 top-1/3 opacity-75`}></div>
         </div> */}
 
-      <BackLink bgColor='sky' color='white' />
-      <Menu currentPage='hello' color='sky' />
-      <section className="content-center mx-auto md:my-0 flex h-screen w-screen flex-col items-start justify-center text-white">
-          <h1 className="text-2xl md:text-5xl mx-4">
+      <BackLink bgColor='sky' color='black' />
+      <Menu currentPage='hello' bgColor='sky' color='black' />
+      <section className="mx-20 md:my-0 flex h-screen w-screen flex-col text-navy">
+          <h1 className="text-2xl md:text-5xl mt-40">
             Hi, my <span>name is <span className="text-purple">Jess</span></span>
           </h1>
-          <p className="mt-2 md:mt-4 md:text-lg font-semibold md:text-paper mx-4">
-            A software developer based in the UK with over 10 years of experience making cool stuff.
+          <p className="mt-2 md:mt-4 md:text-lg font-semibold md:text-paper text-navy">
+            A creative software developer based in the UK with over 10 years of experience making cool stuff.
           </p>
-          <div className="mt-2 md:mt-4 md:text-lg font-semibold md:text-paper mx-4">
+          <div className="mt-2 mb-4 md:mt-4 md:text-lg font-semibold md:text-paper text-navy">
             I spend my freetime <Typewriter words={toDo} />
           </div>
+
+          <h2>Languages</h2>
+          <ul className='list-none mb-4'>
+            <li className='ml-0 mr-2'>C#</li>
+            <li className='mx-2'>HTML</li>
+            <li className='mx-2'>CSS</li>
+            <li className='mx-2'>JavaScript</li>
+            <li className='mx-2'>TypeScript</li>
+            <li className='mx-2'>Python</li>
+          </ul>
+          <h2>Frameworks & libraries</h2>
+          <ul className='list-none mb-4'>
+            <li className='ml-0 mr-2'>.NET Core</li>
+            <li className='mx-2'>Angular</li>
+            <li className='mx-2'>React</li>
+            <li className='mx-2'>Next.JS</li>
+            <li className='mx-2'>Tailwind CSS</li>
+            <li className='mx-2'>Django</li>
+          </ul>
+          <h2>Tools & technology</h2>
+          <ul className='list-none mb-4'>
+            <li className='ml-0 mr-2'>Azure</li>
+            <li className='mx-2'>Azure DevOps</li>
+            <li className='mx-2'>Git</li>
+            <li className='mx-2'>Docker</li>
+            <li className='mx-2'>Kubernetes</li>
+            <li className='mx-2'>Terraform</li>
+            <li className='mx-2'>NodeJs</li>
+          </ul>
       </section>
     </main>
 }

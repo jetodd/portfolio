@@ -74,8 +74,8 @@ export default function Page() {
   
     return <main className={styles.container} style={{ backgroundColor: 'var(--color-cosplay)' }}>
       <BackLink bgColor='mint' color='green' />
-      <Menu currentPage='cosplay' color='mint' />
-      <section className="mx-auto h-screen justify-center mt-14">
+      <Menu currentPage='cosplay' bgColor='mint' color='green' />
+      <section className="mx-auto h-screen justify-center mt-14 z-10">
         {cosplays.map((cosplay, index) => {
           return (
             <span key={index}>

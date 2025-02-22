@@ -18,7 +18,7 @@
     margin: var(--cap-height) var(--half-x-spacing) var(--y-spacing);
     vertical-align: middle;
     display: inline-block;
-    z-index: 239;
+    z-index: 20;
     cursor: pointer;
   
     &::before, &::after {
