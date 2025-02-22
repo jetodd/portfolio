@@ -1,14 +1,15 @@
 .main {
 	background: linear-gradient(180deg, var(--color-hello) 0%, rgba(200,221,226,1) 100%);
 
-	ul {
-		li {
+	.tags {
+		.tag {
 			display: inline-block;
-			border-radius: 3px;
+			border-radius: 0.4rem;
 			background-color: var(--color-navy);
 			color: white;
 			display: inline-block;
-			padding: 0 2px;
+			padding: 6px 10px;
+			font-size: 1.1rem;
 		}
 	}
 }

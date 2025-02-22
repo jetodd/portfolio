@@ -43,32 +43,32 @@ export default function Page() {
           </div>
 
           <h2>Languages</h2>
-          <ul className='list-none mb-4'>
-            <li className='ml-0 mr-2'>C#</li>
-            <li className='mx-2'>HTML</li>
-            <li className='mx-2'>CSS</li>
-            <li className='mx-2'>JavaScript</li>
-            <li className='mx-2'>TypeScript</li>
-            <li className='mx-2'>Python</li>
+          <ul className={`list-none mb-4 ${styles.tags}`}>
+            <li className={`ml-0 mr-2 ${styles.tag}`}>C#</li>
+            <li className={`mx-2 ${styles.tag}`}>HTML</li>
+            <li className={`mx-2 ${styles.tag}`}>CSS</li>
+            <li className={`mx-2 ${styles.tag}`}>JavaScript</li>
+            <li className={`mx-2 ${styles.tag}`}>TypeScript</li>
+            <li className={`mx-2 ${styles.tag}`}>Python</li>
           </ul>
           <h2>Frameworks & libraries</h2>
-          <ul className='list-none mb-4'>
-            <li className='ml-0 mr-2'>.NET Core</li>
-            <li className='mx-2'>Angular</li>
-            <li className='mx-2'>React</li>
-            <li className='mx-2'>Next.JS</li>
-            <li className='mx-2'>Tailwind CSS</li>
-            <li className='mx-2'>Django</li>
+          <ul className={`list-none mb-4 ${styles.tags}`}>
+            <li className={`ml-0 mr-2 ${styles.tag}`}>.NET Core</li>
+            <li className={`mx-2 ${styles.tag}`}>Angular</li>
+            <li className={`mx-2 ${styles.tag}`}>React</li>
+            <li className={`mx-2 ${styles.tag}`}>Next.JS</li>
+            <li className={`mx-2 ${styles.tag}`}>Tailwind CSS</li>
+            <li className={`mx-2 ${styles.tag}`}>Django</li>
           </ul>
           <h2>Tools & technology</h2>
-          <ul className='list-none mb-4'>
-            <li className='ml-0 mr-2'>Azure</li>
-            <li className='mx-2'>Azure DevOps</li>
-            <li className='mx-2'>Git</li>
-            <li className='mx-2'>Docker</li>
-            <li className='mx-2'>Kubernetes</li>
-            <li className='mx-2'>Terraform</li>
-            <li className='mx-2'>NodeJs</li>
+          <ul className={`list-none mb-4 ${styles.tags}`}>
+            <li className={`ml-0 mr-2 ${styles.tag}`}>Azure</li>
+            <li className={`mx-2 ${styles.tag}`}>Azure DevOps</li>
+            <li className={`mx-2 ${styles.tag}`}>Git</li>
+            <li className={`mx-2 ${styles.tag}`}>Docker</li>
+            <li className={`mx-2 ${styles.tag}`}>Kubernetes</li>
+            <li className={`mx-2 ${styles.tag}`}>Terraform</li>
+            <li className={`mx-2 ${styles.tag}`}>NodeJs</li>
           </ul>
       </section>
     </main>
