@@ -15,7 +15,7 @@ export default function Hexagon({
     return (
         <div className={styles.hexagon} style={{ backgroundColor: bgColor }} onClick={handleClick}>
 	        <div className='align-middle'>
-		        <p className='text-sm md:text-xl uppercase'>{name}</p>
+		        <p className='text-xl md:text-2xl uppercase font-[Oliver]'>{name}</p>
                 <span className='text-xs md:text-sm'>{sauce}</span>
 	        </div>
         </div>

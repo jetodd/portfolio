@@ -32,8 +32,8 @@ export default function Page() {
       <BackLink bgColor='sky' color='black' />
       <Menu currentPage='hello' bgColor='sky' color='black' />
       <section className="mx-20 md:my-0 flex h-screen w-screen flex-col text-navy">
-          <h1 className="text-2xl md:text-5xl mt-40">
-            Hi, my <span>name is <span className="text-purple">Jess</span></span>
+          <h1 className="text-4xl md:text-6xl mt-40">
+            <span className='font-[Oliver]'>Hi, my name is Jess</span>
           </h1>
           <p className="mt-2 md:mt-4 md:text-lg font-semibold md:text-paper text-navy">
             A creative software developer based in the UK with over 10 years of experience making cool stuff.

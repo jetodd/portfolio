@@ -23,7 +23,7 @@ export default function Page() {
               <span className="grid place-content-center">
                 <ContactItem icon='linked-in'></ContactItem>
               </span>
-              LinkedIn
+              <span className='font-[Oliver] text-2xl'>LinkedIn</span>
             </a>
           </div>
           <div className="bg-white py-1 text-black content-center display-grid"
@@ -32,7 +32,7 @@ export default function Page() {
               <span className="grid place-content-center">
                 <ContactItem icon='github'></ContactItem>
               </span>
-              Github
+              <span className='font-[Oliver] text-2xl'>Github</span>
             </a>
           </div>
           <div className="bg-white py-1 text-black content-center"
@@ -41,7 +41,7 @@ export default function Page() {
               <span className="grid place-content-center">
                 <ContactItem icon='email'></ContactItem>
               </span>
-              Email
+              <span className='font-[Oliver] text-2xl'>Email</span>
             </a>
           </div>
           <div className="bg-white py-1 text-black rounded-b-full md:rounded-bl-none md:rounded-r-full content-center"
@@ -50,7 +50,7 @@ export default function Page() {
               <span className="grid place-content-center">
                 <ContactItem icon='resume'></ContactItem>
               </span>
-              Resume
+              <span className='font-[Oliver] text-2xl'>Resume</span>
             </a>
           </div>
         </div>
