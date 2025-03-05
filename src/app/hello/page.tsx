@@ -20,8 +20,9 @@ export default function Page() {
   ];
 
     return <main 
-      className={`w-dvw top-0 bg-hello ${styles.main}`}
+      className={`w-dvw h-full top-0 ${styles.main}`}
       >
+        <style>{'body { background-color: var(--color-hello);}'}</style>
         {/* <div className="cloud fixed top-0 left-0 w-full h-3/4">
           <div className={`${styles.cloud} ${styles.one} left-1/4 top-1/4 opacity-80`}></div>
           <div className={`${styles.cloud} ${styles.two} left-1/3 top-1/3 opacity-65`}></div>
@@ -42,8 +43,38 @@ export default function Page() {
           <div className="mt-2 mb-4 mx-2 md:mt-4 md:text-lg font-semibold md:text-paper">
             I spend my freetime <Typewriter words={toDo} />
           </div>
+{/* 
+          <a class="w-btn flp-btn view-planet-javascript" href="#view-planet" title="JavaScript">
+								<div class="w-btn-el css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);">
+									<div class="w-b-a css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);">
+										<span class="btn-left"></span><span class="btn-center">JavaScript</span><span class="btn-right"></span>
+									</div>
+									<div class="w-b-b css-animator" style="transition-duration: 0s; top: 0px; transform: translate(0px, 0px);">
+										<span class="btn-left"></span><span class="btn-center">JavaScript</span><span class="btn-right"></span>
+									</div>
+								</div>
+							</a> */}
 
-          <span className='mx-2 text-lg'>Languages</span>
+          <div id="skills" className='absolute w-100 bottom-0 left-0 bg-green'>
+							<div className="relative py-2 px-4">
+                <ul className="list-none relative inline-block">
+                  <li className='relative inline-block m-4'>
+                    <a className="relative inline-block h-29 leading-29 uppercase overflow-hidden">
+                      <div className={`relative block ${styles.animate}`}>
+                        <div className={`relative ${styles.animate} bg-red`}>
+                          <span className='absolute top-0 left-0 h-29'>Javascript</span>
+                        </div>
+                        <div className={`relative ${styles.animate} bg-blue`}>
+                        <span className='absolute top-0 left-0 h-29'>JavaScript 1</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+							</div>
+						</div>
+
+          {/* <span className='mx-2 text-lg'>Languages</span>
           <ul className={`list-none mb-4 ${styles.tags}`}>
             <li className={`m-2 ${styles.tag}`}>C#</li>
             <li className={`m-2 ${styles.tag}`}>HTML</li>
@@ -70,7 +101,7 @@ export default function Page() {
             <li className={`m-2 ${styles.tag}`}>Kubernetes</li>
             <li className={`m-2 ${styles.tag}`}>Terraform</li>
             <li className={`m-2 ${styles.tag}`}>NodeJs</li>
-          </ul>
+          </ul> */}
       </section>
     </main>
 }

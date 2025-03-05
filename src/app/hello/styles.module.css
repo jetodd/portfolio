@@ -11,6 +11,12 @@
 	}
 }
 
+.animate {
+	transition-duration: 0s;
+	top: 0px;
+	transform: translate(0px, 0px);
+}
+
 .cloud {
 	width: 200px; 
     height: 60px;
