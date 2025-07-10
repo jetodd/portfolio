@@ -37,7 +37,7 @@ export default function ContactItem({ icon }: ContactItemProps) {
     return (
         <div className="parent w-[60px] h-[60px] mb-4 md:w-[120px] md:h-[120px] md:mb-2 relative">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="438.821px" height="438.82px" viewBox="0 0 438.821 438.82" className={`${styles.spiky} w-[70px] h-[70px] md:w-[120px] md:h-[120px] block`} fill="#e2a69a">
+                width="438.821px" height="438.82px" viewBox="0 0 438.821 438.82" className={`${styles.spiky} w-[70px] h-[70px] md:w-[120px] md:h-[120px] block`} fill="#387785">
                     <g>
                         <path d="M432.39,257.938l-39.393-38.546l39.393-38.544c5.715-5.33,7.617-11.991,5.715-19.985
                         c-2.283-7.804-7.231-12.657-14.849-14.56l-53.674-13.706l15.133-53.104c2.279-7.801,0.479-14.467-5.427-19.985

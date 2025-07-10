@@ -4,7 +4,7 @@
 
 .main {
     background-color: var(--color-contact);
-    background-image:  radial-gradient(#d8a19c 8px, transparent 8px), radial-gradient(#d8a19c 8px, var(--color-contact) 8px);
+    background-image:  radial-gradient(#70a3ad 8px, transparent 8px), radial-gradient(#70a3ad 8px, var(--color-contact) 8px);
     background-size: 120px 120px;
     background-position: 0 0,60px 60px;
 }

@@ -55,7 +55,7 @@ export default function Page() {
 
   return (
     <main>
-      <style>{'body { background-color: var(--color-code);}'}</style>
+      <style>{'body { background-color: #e5ddce;}'}</style>
       <BackLink bgColor="azure" color="white" />
       <Menu currentPage="code" bgColor="azure" color="bleu" />
       <section className="mx-auto h-screen justify-center mt-24">

@@ -25,14 +25,14 @@
 }
 
 @theme {
-  --color-cosplay: #3e9d79;
-  --color-contact: #d3938c;
-  --color-hello: #81ccc1;
-  --color-code: #6570d3;
+  --color-cosplay: #508E86;
+  --color-contact: #387785;
+  --color-hello: #e1645e;
+  --color-code: #e88b5d;
 
-  --color-mint: #9bd6c0;
-  --color-rose:#e5c2bc;
-  --color-sky: #adddd6;
+  --color-mint: #6baaa3;
+  --color-rose:#e08d8b;
+  --color-sky: #70A3AC;
   --color-azure: #8f97d8;
   --color-bleu: #869acc;
   --color-black: #070707;
