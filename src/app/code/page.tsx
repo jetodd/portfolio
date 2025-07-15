@@ -61,9 +61,8 @@ export default function Page() {
       <section className="mx-auto h-screen justify-center mt-24">
         <div className="flex flex-wrap justify-center">
           {items.map((item) => (
-            <div key="id" className="xs:size-[100px] sm:size-[140px] md:size-[200px] flex flex-col rounded-lg mx-4 my-2 border-4 border-black text-black aspect-square" style={{ backgroundColor: item.bgColor }}>
+            <div key={item.id} className="xs:size-[100px] sm:size-[140px] md:size-[200px] flex flex-col rounded-lg mx-4 my-2 border-4 border-black text-black aspect-square" style={{ backgroundColor: item.bgColor }}>
               <div className="p-6 aspect-square content-center">
-                
                   <a
                     title="View on GitHub"
                     target="_blank"
