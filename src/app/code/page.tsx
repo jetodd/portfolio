@@ -13,6 +13,8 @@ export default function Page() {
     setSelectedItem(items.find((c) => c.id === id));
   };
 
+  console.log('selectedItem', selectedItem);
+
   const items: CodeItemProps[] = [
     {
       id: "a",
