@@ -67,7 +67,7 @@ export default function Page() {
                   <a
                     title="View on GitHub"
                     target="_blank"
-                    href={`https://github.com/jetodd/${selectedItem?.githubRepo}`}>
+                    href={`https://github.com/jetodd/${item.githubRepo}`}>
                       <GitHub />
                   </a>
                   <h5 className="mb-2 text-xl font-medium text-center align-middle">{item.title}</h5>
