@@ -1,9 +1,6 @@
 export default function Portfolio() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
       <path
         d="M48 336v96a48.14 48.14 0 0048 48h320a48.14 48.14 0 0048-48v-96"
         fill="none"

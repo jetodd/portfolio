@@ -32,8 +32,8 @@ export type ITypewriterProps = {
   onDelay?: () => void;
   words: string[];
   typeSpeed?: number;
-  delay?: number
-}
+  delay?: number;
+};
 
 export type TypewriterHelper = {
   isType: boolean;
@@ -53,9 +53,9 @@ export const useTypewriter = ({
 }: ITypewriterProps): [string, TypewriterHelper] => {
   const [{ speed, text, count }, dispatch] = useReducer(reducer, {
     speed: typeSpeed,
-    text: '',
-    count: 0
-  })
+    text: "",
+    count: 0,
+  });
 
   // Refs
   const loops = useRef(0);
@@ -69,37 +69,37 @@ export const useTypewriter = ({
     const fullWord = words[index];
 
     if (!isDelete.current) {
-        dispatch({ type: "TYPE", payload: fullWord, speed: typeSpeed });
-        isType.current = true;
-        
-        if (text === fullWord) {
-            dispatch({ type: "DELAY", payload: delay });
-            isType.current = false;
-            isDelay.current = true;
-            
-            setTimeout(() => {
-                isDelay.current = false;
-                isDelete.current = true;
-            }, delay);
-        }
+      dispatch({ type: "TYPE", payload: fullWord, speed: typeSpeed });
+      isType.current = true;
+
+      if (text === fullWord) {
+        dispatch({ type: "DELAY", payload: delay });
+        isType.current = false;
+        isDelay.current = true;
+
+        setTimeout(() => {
+          isDelay.current = false;
+          isDelete.current = true;
+        }, delay);
+      }
     } else {
-        dispatch({ type: "DELETE", payload: fullWord, speed: typeSpeed / 2 });
-        if (text === "") {
-            isDelete.current = false;
-            dispatch({ type: "COUNT" });
-        }
+      dispatch({ type: "DELETE", payload: fullWord, speed: typeSpeed / 2 });
+      if (text === "") {
+        isDelete.current = false;
+        dispatch({ type: "COUNT" });
+      }
     }
 
     if (isType.current) {
-        if (onType) onType(loops.current);
+      if (onType) onType(loops.current);
     }
 
     if (isDelete.current) {
-        if (onDelete) onDelete();
+      if (onDelete) onDelete();
     }
 
     if (isDelay.current) {
-        if (onDelay) onDelay();
+      if (onDelay) onDelay();
     }
   }, [count, delay, typeSpeed, words, text, onType, onDelete, onDelay]);
 

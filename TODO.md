@@ -1,0 +1,1 @@
+* Make cosplay panel fixed so it doesn't cut off when scrolled

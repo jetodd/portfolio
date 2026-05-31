@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 // MIT License
 
@@ -22,9 +22,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import { ITypewriterProps, useTypewriter } from '@/app/hooks/useTypewriter'
-import styles from './Typewriter.module.css'
-import { JSX } from 'react'
+import { ITypewriterProps, useTypewriter } from "@/app/hooks/useTypewriter";
+import styles from "./Typewriter.module.css";
+import { JSX } from "react";
 
 export const Typewriter = ({
   words,
@@ -33,7 +33,7 @@ export const Typewriter = ({
   onLoopDone,
   onType,
   onDelay,
-  onDelete
+  onDelete,
 }: ITypewriterProps): JSX.Element => {
   const [text] = useTypewriter({
     words,
@@ -42,13 +42,13 @@ export const Typewriter = ({
     onLoopDone,
     onType,
     onDelay,
-    onDelete
-  })
+    onDelete,
+  });
 
   return (
     <>
       <span>{text}</span>
       <span className={`${styles.blinkingCursor} ${styles.blinking}`}>|</span>
     </>
-  )
-}
+  );
+};

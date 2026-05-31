@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
@@ -25,14 +25,14 @@
 }
 
 @theme {
-  --color-cosplay: #508E86;
+  --color-cosplay: #508e86;
   --color-contact: #387785;
   --color-hello: #e1645e;
   --color-code: #e88b5d;
 
   --color-mint: #6baaa3;
-  --color-rose:#e08d8b;
-  --color-sky: #70A3AC;
+  --color-rose: #e08d8b;
+  --color-sky: #70a3ac;
   --color-azure: #6596a0;
   --color-bleu: #869acc;
   --color-black: #070707;
@@ -42,7 +42,7 @@
 
 :root {
   --white: #ededed;
-  --black : #070707;
+  --black: #070707;
   --test: rgb(88, 126, 221);
   --background: var(--black);
   --foreground: var(--white);

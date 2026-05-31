@@ -1,44 +1,45 @@
 .hexagon {
-    --width: calc(100vw / 5);
-    --x-spacing: calc(100vw / 80);
+  --width: calc(100vw / 5);
+  --x-spacing: calc(100vw / 80);
 
-    --side-length: calc((var(--width) / 2) / cos(30deg));
-    --cap-y-scale: calc(tan(30deg));
-    --cap-height: calc((var(--width) / 2) * var(--cap-y-scale));
-    --cap-unscaled-side-length: calc(var(--width) / sqrt(2));
-    --half-x-spacing: calc(var(--x-spacing) / 2);
-    --y-spacing: calc(var(--half-x-spacing) * sqrt(3));
-    --spacer-width: calc(var(--width) + var(--x-spacing));
+  --side-length: calc((var(--width) / 2) / cos(30deg));
+  --cap-y-scale: calc(tan(30deg));
+  --cap-height: calc((var(--width) / 2) * var(--cap-y-scale));
+  --cap-unscaled-side-length: calc(var(--width) / sqrt(2));
+  --half-x-spacing: calc(var(--x-spacing) / 2);
+  --y-spacing: calc(var(--half-x-spacing) * sqrt(3));
+  --spacer-width: calc(var(--width) + var(--x-spacing));
 }
 
 .hexagon {
-    position: relative;
-    width: var(--width);
-    height: var(--side-length);
-    margin: var(--cap-height) var(--half-x-spacing) var(--y-spacing);
-    vertical-align: middle;
-    display: inline-block;
-    z-index: 20;
-    cursor: pointer;
-  
-    &::before, &::after {
-        z-index: -1;
-        content: '';
-        display: block;
-        position: absolute;
-        width: var(--cap-unscaled-side-length);
-        height: var(--cap-unscaled-side-length);
-        background-color: inherit;
-        transform-origin: 0 0;
-        transform: scaleY(var(--cap-y-scale)) rotate(-45deg);
-    }
-  
+  position: relative;
+  width: var(--width);
+  height: var(--side-length);
+  margin: var(--cap-height) var(--half-x-spacing) var(--y-spacing);
+  vertical-align: middle;
+  display: inline-block;
+  z-index: 20;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--cap-unscaled-side-length);
+    height: var(--cap-unscaled-side-length);
+    background-color: inherit;
+    transform-origin: 0 0;
+    transform: scaleY(var(--cap-y-scale)) rotate(-45deg);
+  }
+
   &::before {
     top: 0;
   }
-  
+
   &::after {
-   top: var(--side-length);
+    top: var(--side-length);
   }
 }
 
@@ -46,7 +47,6 @@
   display: inline-block;
   width: calc(var(--width) + var(--x-spacing));
 }
-
 
 /* @mixin hexagon($width) {
   --x-spacing: calc(100vw / 80);
